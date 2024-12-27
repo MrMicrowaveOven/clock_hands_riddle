@@ -14,7 +14,7 @@ When the hand gets to 360°, it'll reset to 0°.
 
 The minute hand moves 1/60 of the way around the clock every minute.  The hour hand moves 1/12 of the way around the clock every hour.  I considered using decimals of degrees, but realized that this could get messy very quickly.
 
-My solution?  Make a unit that is as small as we need.  Since we need this rounded to the nearest second, I defined a unit that is the angle that the hour hand moves in a second.  It's very small.  Since the hour hand moves entirely around the circle in 12 hours (which is 12 * 60 * 60 seconds), I define a loop around the clock as 12 * 60 * 60 = 43,200 units.  So a unit is 1/43,200th of the way around the circle.
+My solution?  Make a unit that is as small as we need.  Since we need this rounded to the nearest second, I defined a unit that is the angle that the hour hand moves in a second.  It's very small.  Since the hour hand moves entirely around the circle in 12 hours (which is 12 * 60 * 60 seconds), I define a loop around the clock as 12 * 60 * 60 = 43,200 units.  So this unit is 1/43,200th of the way around the circle.
 
 The name of the unit?  I went with a __fourthreet__ (credit to my dad), which is short for Four-Three-Two-Hundredths.  Makes it really easy to remember 43,200 on the fly.
 
